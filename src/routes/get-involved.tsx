@@ -1,35 +1,55 @@
+/* eslint-disable prettier/prettier */
 import { createFileRoute } from "@tanstack/react-router";
 import { SUMMIT_CSS } from "@/lib/summit-css";
 import { SiteNav, SiteFooter, TicketsSection } from "@/components/site-shell";
-import img1 from "@/assets/SheCodeAfrica_182.jpg.asset.json";
-import img2 from "@/assets/SheCodeAfrica_42.jpg.asset.json";
-import img3 from "@/assets/SheCodeAfrica_51.jpg.asset.json";
-import img4 from "@/assets/SheCodeAfrica_35.jpg.asset.json";
-import img5 from "@/assets/SheCodeAfrica_95.jpg.asset.json";
-import img6 from "@/assets/SheCodeAfrica_175.jpg.asset.json";
-import img7 from "@/assets/SheCodeAfrica_176.jpg.asset.json";
+import {
+  
+  img1,
+  img2,
+  img3,
+  img4,
+  img5,
+  img6,
+  img7,
+} from "@/Assests";
+
 
 export const Route = createFileRoute("/get-involved")({
   head: () => ({
     meta: [
       { title: "Get Involved — She Code Africa Summit 2026" },
-      { name: "description", content: "Sponsor, exhibit, partner, fund tickets, or volunteer at the She Code Africa Summit 2026 in Lagos." },
+      {
+        name: "description",
+        content:
+          "Sponsor, exhibit, partner, fund tickets, or volunteer at the She Code Africa Summit 2026 in Lagos.",
+      },
       { property: "og:title", content: "Get Involved — She Code Africa Summit 2026" },
-      { property: "og:description", content: "Sponsor, exhibit, partner, fund tickets, or volunteer at the She Code Africa Summit 2026 in Lagos." },
+      {
+        property: "og:description",
+        content:
+          "Sponsor, exhibit, partner, fund tickets, or volunteer at the She Code Africa Summit 2026 in Lagos.",
+      },
       { property: "og:url", content: "https://she-code-africa-elevate.lovable.app/get-involved" },
     ],
-    links: [
-      { rel: "canonical", href: "https://she-code-africa-elevate.lovable.app/get-involved" },
-    ],
+    links: [{ rel: "canonical", href: "https://she-code-africa-elevate.lovable.app/get-involved" }],
   }),
   component: GetInvolvedPage,
 });
 
 const SPONSOR_DECK_URL = "https://drive.google.com/file/d/1pZxpSxCmeiPC6sYWyuVNPPlzI30NRdfc/view";
-const VOLUNTEER_FORM_URL = "https://docs.google.com/document/d/1wrC5YiB4_z8Q2oKXw58ZLxFmL6InUIK7A7f57-gbxjY/edit?usp=sharing";
-const PARTNER_FORM_URL = "https://docs.google.com/forms/d/e/1FAIpQLSfSuV3CUIURFTOJmABNKaX1WefWm23roIGGeLF0PuiW1duwew/viewform?usp=header";
+const VOLUNTEER_FORM_URL =
+  "https://docs.google.com/document/d/1wrC5YiB4_z8Q2oKXw58ZLxFmL6InUIK7A7f57-gbxjY/edit?usp=sharing";
+const PARTNER_FORM_URL =
+  "https://docs.google.com/forms/d/e/1FAIpQLSfSuV3CUIURFTOJmABNKaX1WefWm23roIGGeLF0PuiW1duwew/viewform?usp=header";
 
-type Way = { title: string; body: string[]; cta: string; href: string; image: string; imageAlt: string };
+type Way = {
+  title: string;
+  body: string[];
+  cta: string;
+  href: string;
+  image: string;
+  imageAlt: string;
+};
 
 const WAYS: Way[] = [
   {
@@ -40,7 +60,7 @@ const WAYS: Way[] = [
     ],
     cta: "Become a Sponsor",
     href: PARTNER_FORM_URL,
-    image: img1.url,
+    image: img1,
     imageAlt: "Sponsors and partners at the SCA Summit",
   },
   {
@@ -51,7 +71,7 @@ const WAYS: Way[] = [
     ],
     cta: "Reserve a Booth",
     href: PARTNER_FORM_URL,
-    image: img2.url,
+    image: img2,
     imageAlt: "Exhibition booth activation at the summit",
   },
   {
@@ -62,7 +82,7 @@ const WAYS: Way[] = [
     ],
     cta: "Become a Media Partner",
     href: PARTNER_FORM_URL,
-    image: img3.url,
+    image: img3,
     imageAlt: "Speakers being covered on stage",
   },
   {
@@ -73,7 +93,7 @@ const WAYS: Way[] = [
     ],
     cta: "Sponsor a Ticket",
     href: PARTNER_FORM_URL,
-    image: img4.url,
+    image: img4,
     imageAlt: "Community members at a previous SCA Summit",
   },
   {
@@ -84,7 +104,7 @@ const WAYS: Way[] = [
     ],
     cta: "Partner With Us",
     href: PARTNER_FORM_URL,
-    image: img5.url,
+    image: img5,
     imageAlt: "Summit operations and on-ground team",
   },
   {
@@ -95,7 +115,7 @@ const WAYS: Way[] = [
     ],
     cta: "Recruit With Us",
     href: "https://docs.google.com/forms/d/e/1FAIpQLSd1qfzsxRT87iHqkWhZQOoq-8SQ0wGMgXAgpWZmucu1vehx1Q/viewform",
-    image: img7.url,
+    image: img7,
     imageAlt: "Recruiters meeting candidates at the summit hiring room",
   },
   {
@@ -107,7 +127,7 @@ const WAYS: Way[] = [
     ],
     cta: "Apply to Volunteer",
     href: VOLUNTEER_FORM_URL,
-    image: img6.url,
+    image: img6,
     imageAlt: "Volunteer team supporting the summit",
   },
 ];
@@ -120,42 +140,52 @@ function GetInvolvedPage() {
       <SiteNav />
 
       <main>
-      <header className="gi-hero">
-        <div className="gi-hero-gradient" aria-hidden="true" />
-        <div className="gi-hero-inner">
-          <h1>Get Involved<br />There's a Place for You at #SCASummit26</h1>
-          <p>
-            As we celebrate our 10th year milestone at this year's Summit, we're inviting individuals, organisations, and communities to play a part in shaping the next decade of impact. 
-          </p>
-          <p>
-            No matter how you would like to contribute, there are many ways to be part of the She Code Africa Summit 2026, from attending and volunteering to sponsoring, partnering, or supporting someone else's journey.
-          </p>
-          <p>
-            {"\n"}
-          </p>
-          <div className="gi-hero-cta">
-            <a
-              href="#tickets"
-              className="btn-primary"
-              onClick={(e) => {
-                e.preventDefault();
-                document.getElementById("tickets")?.scrollIntoView({ behavior: "smooth", block: "start" });
-              }}
-            >
-              Purchase Early Bird
-            </a>
-            <a href={SPONSOR_DECK_URL} target="_blank" rel="noopener" className="btn-ghost">Talk to Partnerships</a>
+        <header className="gi-hero">
+          <div className="gi-hero-gradient" aria-hidden="true" />
+          <div className="gi-hero-inner">
+            <h1>
+              Get Involved
+              <br />
+              There's a Place for You at #SCASummit26
+            </h1>
+            <p>
+              As we celebrate our 10th year milestone at this year's Summit, we're inviting
+              individuals, organisations, and communities to play a part in shaping the next decade
+              of impact. 
+            </p>
+            <p>
+              No matter how you would like to contribute, there are many ways to be part of the She
+              Code Africa Summit 2026, from attending and volunteering to sponsoring, partnering, or
+              supporting someone else's journey.
+            </p>
+            <p>{"\n"}</p>
+            <div className="gi-hero-cta">
+              <a
+                href="#tickets"
+                className="btn-primary"
+                onClick={(e) => {
+                  e.preventDefault();
+                  document
+                    .getElementById("tickets")
+                    ?.scrollIntoView({ behavior: "smooth", block: "start" });
+                }}
+              >
+                Purchase Early Bird
+              </a>
+              <a href={SPONSOR_DECK_URL} target="_blank" rel="noopener" className="btn-ghost">
+                Talk to Partnerships
+              </a>
+            </div>
           </div>
-        </div>
-      </header>
+        </header>
 
-      <section className="gi-ways">
-        {WAYS.map((w, i) => (
-          <WayRow key={w.title} way={w} reverse={i % 2 === 1} index={i} />
-        ))}
-      </section>
+        <section className="gi-ways">
+          {WAYS.map((w, i) => (
+            <WayRow key={w.title} way={w} reverse={i % 2 === 1} index={i} />
+          ))}
+        </section>
 
-      <TicketsSection />
+        <TicketsSection />
       </main>
       <SiteFooter />
     </>
@@ -172,13 +202,16 @@ function WayRow({ way, reverse, index }: { way: Way; reverse: boolean; index: nu
       <div className="gi-row-copy">
         <span className="gi-row-index">0{index + 1}</span>
         <h2>{way.title}</h2>
-        {way.body.map((p) => <p key={p}>{p}</p>)}
-        <a href={way.href} className="gi-row-cta">{way.cta}</a>
+        {way.body.map((p) => (
+          <p key={p}>{p}</p>
+        ))}
+        <a href={way.href} className="gi-row-cta">
+          {way.cta}
+        </a>
       </div>
     </div>
   );
 }
-
 
 const PAGE_CSS = `
 .gi-hero { position:relative; padding:170px 24px 90px; overflow:hidden; background:#fff; }
