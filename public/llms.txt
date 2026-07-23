@@ -1,0 +1,11 @@
+# She Code Africa Summit 2026
+
+> The flagship summit of African women in tech. A decade of impact — celebrating ten years of She Code Africa and bringing together talent, builders, leaders, and funders shaping the ecosystem across the continent. Lagos, 19 September 2026.
+
+## Pages
+
+- [Home](/): SCA Summit 2026 landing page — event details, summit experience, past recap, sponsorship opportunities, and waitlist signup.
+
+## Optional
+
+- [Sitemap](/sitemap.xml): XML sitemap for search engine discovery.

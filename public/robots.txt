@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://she-code-africa-elevate.lovable.app/sitemap.xml
