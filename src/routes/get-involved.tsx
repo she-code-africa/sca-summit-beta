@@ -151,7 +151,7 @@ function GetInvolvedPage() {
             <p>
               As we celebrate our 10th year milestone at this year's Summit, we're inviting
               individuals, organisations, and communities to play a part in shaping the next decade
-              of impact. 
+              of impact.
             </p>
             <p>
               No matter how you would like to contribute, there are many ways to be part of the She
